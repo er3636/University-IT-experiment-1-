@@ -1,0 +1,18 @@
+# 課題 1
+grep "^[a,i,u,e,o]" example1.txt
+
+# 課題 2
+grep "[^a,i,u,e,o][^a,i,u,e,o]" example1.txt
+
+# 課題 3
+grep "[^a,i,u,e,o][^a,i,u,e,o][a,i,u,e,o][^a,i,u,e,o][^a,i,u,e,o]" example1.txt
+
+# 課題 4
+grep "[6-8][0-9]" example2.txt
+
+# 課題 5
+grep "^¥(00¥).*¥(11¥)$" example3.txt
+grep "^¥(01¥).*¥(01¥)$" example3.txt
+grep "^¥(...¥)*$" example3.txt
+grep "^¥(101¥)" example3.txt
+
