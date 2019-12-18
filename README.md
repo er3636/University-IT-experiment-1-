@@ -11,6 +11,9 @@ Python で記事の特徴を自動的に判別するプログラム
 ・非負値行列因子分解
 ・データの中から独立した特徴を発見する
 
-# Regular Expression Experiment
+# Regular Expression Experiment（正規表現）
 Grep Command と Regular Expressionを用いた実験であった。
+
+# 計算機動作原理
+ED21のアセンブリ言語で書いたプログラムである。
 
