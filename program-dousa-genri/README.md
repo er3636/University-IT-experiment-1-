@@ -9,30 +9,52 @@
 
 		
   1	#include <stdio.h>
+  
   2
+  
   3	int comb(int n, int r)
+  
   4	{
+  
   5		int ret;
+  
   6
+  
   7		if (n == 0) ret = 1;
+  
   8		else if (r == 1) ret = n;
+  
   9		else if (r == 0 || n == r) ret = 1;
+ 
  10		else ret = comb(n-1, r-1) + comb(n-1, r);
+ 
  11
+ 
  12		return ret;
+ 
  13	}
+ 
  14
+ 
  15	int main()
+ 
  16	{
+ 
  17		int a;
+ 
  18
+ 
  19		a = comb(4,2);
+ 
  20		printf("a = %d\n", a);
+ 
  21
+ 
  22		return 0;
+ 
  23	}
-		
-	      
+
+
 1-1: 上記のプログラムを実行し，出力結果を示せ．
 
 1-2: comb(4,2)によって comb()は何回呼ばれるか．
@@ -46,43 +68,79 @@
 
 	    
   1	#include <stdio.h>
+  
   2
+  
   3	int *foo()
+  
   4	{
+  
   5		volatile int a, b;
+  
   6		a = 10;
+  
   7		return &a;
+  
   8	}
+  
   9
+ 
  10	int *bar()
+ 
  11	{
+ 
  12		volatile int a, b;
+ 
  13		b = 20;
+ 
  14		return &b;
+ 
  15	}
+ 
  16
+ 
  17	int baz()
+ 
  18	{
+ 
  19		int a, b;
+ 
  20		a = 80;
+ 
  21		b = 90;
+ 
  22		return 0;
+ 
  23	}
+ 
  24
+ 
  25	int main()
+ 
  26	{
+ 
  27		int *p, *q, r;
+ 
  28
+ 
  29		p = foo();
+ 
  30		q = bar();
+ 
  31		printf("*p = %d, *q = %d\n", *p, *q);
+ 
  32
+ 
  33		r = baz();
+ 
  34		printf("*p = %d, *q = %d\n", *p, *q);
+ 
  35
+ 
  36		return 0;
+ 
  37	}
-	    
+
 	  
 2-1: 上記のプログラムを実行し，出力結果を示せ．
 
