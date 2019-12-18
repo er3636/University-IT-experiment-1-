@@ -43,23 +43,29 @@ def func_cost(a, b):
 ###########################
 
 # 課題 3
-本課題では、乗法的更新ルール適用時のコスト 関数の変化を折れ線グラフで示す。そのためにはx 軸を代表する a rray x と y 軸を代表する arrayyを定義する。課題 2 において更新を行った for ループの中で、繰り返し数である count 変数を x に、コスト関数の結果である cost 変数を yに加えていく。よって、 count の変化を示す array x と cost 変数を示す array y を得る。それをmatplotlib ライブラリの中にある plot 関数に渡すとグラフができる。
+　本課題では、乗法的更新ルール適用時のコスト 関数の変化を折れ線グラフで示す。そのためにはx 軸を代表する a rray x と y 軸を代表する arrayyを定義する。課題 2 において更新を行った for ループの中で、繰り返し数である count 変数を x に、コスト関数の結果である cost 変数を yに加えていく。よって、 count の変化を示す array x と cost 変数を示す array y を得る。それをmatplotlib ライブラリの中にある plot 関数に渡すとグラフができる。
 
 # 課題 4
  本課題では日本語の記事に対して非負値行列因子分解を行い、記事の特徴解析を行う。Reuterseuters日本のトップニュースから1010個の記事を取得し、それを個の記事を取得し、それを’data_jp.txt’というファイルに保存し、課題1課題2と同様に保存したファイルから記事を読み、解析を行う。。
  本課題ではある url から読み取りを行うためにはurllib.requesturllib.requestライブラリを使用する。また、読み取ったHTMLファイルから記事を取るためにBeautifulSoupライブラリを用いる。今回読み取りを行う urlは（"https://jp.reuters.com/news/topNews""https://jp.reuters.com/news/topNews"）である。
 
 # 課題1・2の結果
-特徴の行列の上位6単語、重みの行列の上位3記事を表示：
+　特徴の行列の上位6単語、重みの行列の上位3記事を表示：
 
 ['for', 'securities', 'rules', 'new', 'is', 'and']
+
 China relaxes rules for securities firmsBEIJING (Reuters)
+
 Golf's new boy wonder? He's been mistaken for Tiger Woods' ball
+
 Cracking football's glass ceiling
 
 ['but', 'not', 'were', 'no', 'dinosaur', 'this']
+
 Researchers say Neanderthals were not our dimwitted inferiors
+
 Scientists unearth unique long
+
 Golf's new boy wonder? He's been mistaken for Tiger Woods' ball
 .
 .
@@ -67,18 +73,30 @@ Golf's new boy wonder? He's been mistaken for Tiger Woods' ball
 
 # 応用課題結果
 形式：
+
 「記事に主に出ている単語」
+
 記事番「記事に関する情報」
+
 記事番「記事に関する情報」
+
 記事番「記事に関する情報」
 
 結果：
+
 ['サウジ ', 投資 ', を ', 金融 ', から ', 閣僚]
+
 3［リヤド ２３日 ロイター］
+
 1［アンカラ ２３日 ロイター］
+
 0［東京 ２３日 ロイター］
 
+
 ['米 ', か ', 認定 ', 為替 ', し ', 派]
+
 9［東京 ２３日］
+
 4［東京 ２３日 ロイター］
+
 7［東京 ２３日 ロイター］
