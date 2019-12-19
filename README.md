@@ -12,6 +12,9 @@ Python で記事の特徴を自動的に判別するプログラム
 # Regular Expression Experiment（正規表現）
 Grep Command と Regular Expressionを用いた実験であった。
 
+# Shell Script
+シェルスクリプトを用いたプログラムを作ってみた
+
 # 計算機動作原理
 ED21のアセンブリ言語で書いたプログラムである。
 
